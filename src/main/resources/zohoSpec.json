@@ -1,0 +1,23 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "*": {
+        "id": "id",
+        "name": "firstName",
+        "amount": "salary",
+        "email": "contact.emailAddress",
+        "mobile": "contact.mobileNumber",
+        "doj": "doj",
+        "source": "source"
+      }
+    }
+  },
+  {
+    "operation": "modify-default-beta",
+    "spec": {
+      "lastName": "",
+      "fullName": "@(1,firstName)"
+    }
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "employee": {
+        "id": "id",
+        "fname": "firstName",
+        "lName": "lastName",
+        "salary": "salary",
+        "dateOfJoining": "doj",
+        "source": "source",
+        "contact": {
+          "phoneNumber": "contact.mobileNumber",
+          "emailAddress": "contact.emailAddress"
+        }
+      }
+    }
+  },
+  {
+    "operation": "modify-default-beta",
+    "spec": {
+      "fullName": "=concat(@(1,firstName),' ',@(1,lastName))"
+    }
+  }
+]
